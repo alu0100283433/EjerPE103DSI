@@ -1,5 +1,7 @@
 
-_**Ejercicios de las Prácticas DSI PE103**_
+# Ejercicios de las Prácticas DSI PE103
 
-Autor: Manuel Ramón Regalado Peraza
-e-mail: 
+---------------------------------------------------------------------
+
+* Autor : Manuel Ramón Regalado Peraza
+* email : alu0100283433@ull.edu.es
