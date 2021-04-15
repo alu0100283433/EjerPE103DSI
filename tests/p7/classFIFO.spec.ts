@@ -8,6 +8,7 @@ describe('bloque tests clase Fifo', () => {
 
   const cola = new Fifo();
   const cola2 = new Fifo();
+  const cola3 = new Fifo();
 
   it('- Nº de elementos de la cola actualmente es 0', () => {
     expect(cola.size()).to.be.equal(0);
@@ -25,5 +26,6 @@ describe('bloque tests clase Fifo', () => {
     cola2.push('Gato');
 
     expect(cola2.pseek()).to.be.equal('Perro');
+    expect(cola3.pseek()).to.be.equal(undefined);
   });
 });
