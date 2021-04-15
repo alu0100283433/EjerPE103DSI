@@ -10,4 +10,8 @@ export class Fifo {
   size(): number {
     return this.estructura.length;
   }
+
+  push(dato: any): void {
+    this.estructura.push(dato);
+  }
 }
