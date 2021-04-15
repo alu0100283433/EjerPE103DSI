@@ -35,4 +35,10 @@ describe('bloque tests clase Fifo', () => {
     expect(cola3.print()).equal('');
     expect(cola.print()).equal('3(H)(T)');
   });
+
+  it('pop() de Fifo devuelve "Perro"', () => {
+    expect(cola2.pop()).equal('Perro');
+    expect(cola2.print()).equal('Vaca(H)->Gato(T)');
+    expect(cola2.size()).to.be.equal(2);
+  });
 });
