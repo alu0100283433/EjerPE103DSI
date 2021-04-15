@@ -6,4 +6,8 @@ export class Fifo {
   constructor() {
     this.estructura = [];
   }
+
+  size(): number {
+    return this.estructura.length;
+  }
 }
