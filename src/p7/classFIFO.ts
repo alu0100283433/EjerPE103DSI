@@ -14,4 +14,12 @@ export class Fifo {
   push(dato: any): void {
     this.estructura.push(dato);
   }
+
+  pseek(): any {
+    if (this.estructura.length > 0) {
+      return this.estructura[0];
+    } else {
+      return undefined;
+    }
+  }
 }
