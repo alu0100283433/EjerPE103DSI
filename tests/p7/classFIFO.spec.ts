@@ -28,4 +28,11 @@ describe('bloque tests clase Fifo', () => {
     expect(cola2.pseek()).to.be.equal('Perro');
     expect(cola3.pseek()).to.be.equal(undefined);
   });
+
+  it('print() de Fifo', () => {
+    // La "H" es de "Head" y la "T" de "Tail"
+    expect(cola2.print()).equal('Perro(H)->Vaca->Gato(T)');
+    expect(cola3.print()).equal('');
+    expect(cola.print()).equal('3(H)(T)');
+  });
 });
