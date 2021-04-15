@@ -48,4 +48,8 @@ export class Fifo {
 
     return resultado;
   }
+
+  pop(): any {
+    return this.estructura.shift();
+  }
 }
