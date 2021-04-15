@@ -8,7 +8,7 @@
 export class Fifo {
   /**
    * Una estructura tipo Array que simulará una cola con los métodos provistos
-   * de la clase.
+   * en esta clase.
    * @private, @member
    */
   private estructura: any[];
@@ -37,7 +37,7 @@ export class Fifo {
 
   /**
    * Devuelve el dato que se encuentra en la primera posición de la estructura
-   * FIFO, llamada _Cabeza_ o _HEAD_. Pero **no lo extrae**.
+   * FIFO, llamada _Cabeza_ o _HEAD_. Pero **no lo extrae de la estructura**.
    * @returns El dato que se encuentra en la primera posición de la estructura,
    * en la _Cabeza_ de la misma.
    */
@@ -51,10 +51,10 @@ export class Fifo {
 
   /**
    * Devuelve una cadena formateada con la estructura interna del FIFO. El
-   * primer elemento va acompañado del texto _**(H)**_, indicando que es la
+   * primer elemento va acompañado del texto **_(H)_** , indicando que es la
    * _Cabeza_ o _HEAD_ de la estructura, en cambio el último elemento le
-   * acompaña un _**(T)**_ de _Cola/Tail_. Los elementos van separados por
-   * _**->**_
+   * acompaña un **_(T)_** de _Cola/Tail_. Los elementos van separados por
+   * ```->```
    * @returns Una cadena formateada con la estructura del FIFO.
    */
   print(): string {
@@ -86,7 +86,7 @@ export class Fifo {
   /**
    * Extrae el primer elemento (la _Cabeza_ o _HEAD_) del FIFO/Cola y devuelve
    * su valor
-   * @returns El valor extraido de la primera posicioón del FIFO.
+   * @returns El valor extraido de la primera posición del FIFO.
    */
   pop(): any {
     return this.estructura.shift();
