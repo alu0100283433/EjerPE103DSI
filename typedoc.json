@@ -1,6 +1,6 @@
 {
   "entryPoints": [
-
+    "./src/p7/classFIFO.ts"
   ],
   "out": "./documentation"
 }
