@@ -1,6 +1,9 @@
 {
   "entryPoints": [
-    "./src/p7/classFIFO.ts"
+    "./src/p7/classFIFO.ts",
+    "./src/p9/ejercicio1.ts",
+    "./src/p9/ejercicio2.ts",
+    "./src/p9/ejercicio3.ts"
   ],
   "out": "./documentation"
 }
