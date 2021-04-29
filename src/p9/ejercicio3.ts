@@ -2,15 +2,19 @@
 
 import * as fs from 'fs';
 
+// Sólo hice la clase siguiente para tener algo que testear ya que no usé
+// en el resto funciones ni clases
+
 /**
  * Una clase que calcula el número de líneas, palabras y caracteres de un
  * string.
  */
-class CalculaLineasPalabrasCaracteres {
+export class CalculaLineasPalabrasCaracteres {
   constructor() {}
 
   /**
-   * 
+   * El método que se usa para calcular el número de líneas, palabras y 
+   * caracteres de un string.
    * @param contenido Un string a calcular
    * @returns Un array con 3 números : El primero el número de líneas, el
    * segundo el número de palabras y tercero el número de caracteres.
