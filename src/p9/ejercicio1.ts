@@ -1,3 +1,6 @@
+// Ejercicio1. Implemente un programa que muestre por pantalla los nombre de
+// los archivos almacenados en un directorio en concreto.
+
 import * as fs from 'fs';
 
 if (process.argv.length !== 3) {
@@ -14,6 +17,8 @@ if (process.argv.length !== 3) {
     const contenidoDirectorio = fs.readdirSync(dirname, {withFileTypes: true});
 
     contenidoDirectorio.forEach((elemento) => {
+      // Esta línea sirve para que sólo muestre los ficheros, no los directorios
+      // que pudieran estar dentro del directorio especificado.
       if (elemento.isFile()) console.log(elemento.name);
     });
   }
