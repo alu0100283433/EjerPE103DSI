@@ -5,6 +5,10 @@
 import * as fs from 'fs';
 import {spawn} from 'child_process';
 
+/**
+ * Código para detectar los ficheros de un directorio, mostrar su contenido y
+ * además el número de líneas, palabras y caracteres.
+ */
 if (process.argv.length !== 3) {
   console.log('Please, specify a directory');
 } else {

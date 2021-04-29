@@ -3,6 +3,9 @@
 
 import * as fs from 'fs';
 
+/**
+ * Código para detectar los ficheros de un directorio y mostrar sus nombres.
+ */
 if (process.argv.length !== 3) {
   console.log('Please, specify a directory');
 } else {

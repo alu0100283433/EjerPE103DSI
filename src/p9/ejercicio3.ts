@@ -2,9 +2,19 @@
 
 import * as fs from 'fs';
 
+/**
+ * Una clase que calcula el número de líneas, palabras y caracteres de un
+ * string.
+ */
 class CalculaLineasPalabrasCaracteres {
   constructor() {}
 
+  /**
+   * 
+   * @param contenido Un string a calcular
+   * @returns Un array con 3 números : El primero el número de líneas, el
+   * segundo el número de palabras y tercero el número de caracteres.
+   */
   calcular(contenido: string): [number, number, number] {
     // Cálculo de líneas, palabras y caracteres a lo bruto.
     const lineas = contenido.split('\n');
@@ -27,7 +37,10 @@ class CalculaLineasPalabrasCaracteres {
   }
 }
 
-
+/**
+ * Código para detectar los ficheros de un directorio, abrirlos, contar
+ * su número de caracteres y mostrar sólo el que tenga mayour número de ellos.
+ */
 if (process.argv.length !== 3) {
   console.log('Please, specify a directory');
 } else {
